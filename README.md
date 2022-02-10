@@ -17,7 +17,7 @@ This is a [Sublime3](http://www.sublimetext.com/) plugin for auto-completion and
 	a) Open Sublime 
 	b) Go to Preference/Package Control
 	c) Select Add Repository
-	d) Enter the plugin github repo https://github.com/SumeetSinha/FLAC-Tools
+	d) Enter the plugin github repo https://github.com/katerinaziot/FLAC-Tools
 	e) Again, open Preferences/Package Control
 	f) Select Install Package
 	g) Search for FLACTools and install it.
