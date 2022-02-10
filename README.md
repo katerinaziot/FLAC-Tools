@@ -3,7 +3,7 @@
 
 ### Usage
 
-It is an sublime plugin for auto-completion and syntax coloring of ```.fis```, ```.fish```, and ```.dat``` files for [FLAC](https://www.itascacg.com/software/FLAC).
+This is a [Sublime3] (http://www.sublimetext.com/) plugin for auto-completion and syntax coloring of ```.fis```, ```.fish```, and ```.dat``` files for [FLAC](https://www.itascacg.com/software/FLAC).
 
 ### Features
 
