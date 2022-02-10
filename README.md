@@ -3,11 +3,11 @@
 
 ### Usage
 
-This is a [Sublime3] (http://www.sublimetext.com/) plugin for auto-completion and syntax coloring of ```.fis```, ```.fish```, and ```.dat``` files for [FLAC](https://www.itascacg.com/software/FLAC).
+This is a [Sublime3](http://www.sublimetext.com/) plugin for auto-completion and syntax coloring of ```.fis```, ```.fish```, and ```.dat``` files for [FLAC](https://www.itascacg.com/software/FLAC).
 
 ### Features
 
-1. FLAC-Tools provide **auto-completion** and **syntax highlighting** for fis/fish language code.
+1. FLAC-Tools provide **auto-completion** and **syntax highlighting** for fis/fish/dat language code.
 2. Syntax language for FLAC files in sublime (keywords, functions, parameters, property specifications, mathematical operators, numerics, comments)
 3. Choose Monokai color scheme under Sublime > Preferences > Select Color Scheme...
 4. Autocompletion options automatically appear upon typing as list underneath. 
