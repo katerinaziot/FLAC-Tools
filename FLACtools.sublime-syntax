@@ -1,0 +1,70 @@
+%YAML 1.2
+---
+# Developed by Katerina Ziotopoulou, January 2022
+# See http://www.sublimetext.com/docs/3/syntax.html
+
+name: FLACtools
+
+file_extensions: [fis, fish, dat]
+
+scope: source.FLACtools
+
+contexts:
+  # The prototype context is prepended to all contexts but those setting
+  # meta_include_prototype: false.
+  prototype:
+    - include: comments
+
+  main:
+    # The main context is the initial starting point of our syntax.
+    # Include other contexts from here (or specify them directly).
+    - include: keywords
+    - include: numbers
+    - include: strings
+    - include: operators
+
+  keywords:
+    # Keywords are defined here.
+    # Note that blackslashes don't need to be escaped within single quoted
+    # strings in YAML. When using single quoted strings, only single quotes
+    # need to be escaped: this is done by using two single quotes next to each
+    # other.
+
+    - match: '\b(group|mark|unmark|line|arc|endif|end_if|endcase|caseof|if|then|else|res|rat|print|pl pen|array|while|whilestepping|while_stepping|prop|new|config|grid|model|gen|save|table|ini|initial|call|fix|set|his|history|struc|structure|interface|attach|water|apply|interior|solve|step|plot)\b'
+      scope: keyword.control.FLACtools
+
+    - match: '\b(def|end|command|end_command|endcommand|loop|endloop|end_loop)\b'
+      scope: major.functions.FLACtools
+      
+    - match: '\b(flow|gwflow|cppudm|dyn|dy_damp|dynamic|read|write|delete|hyst|gravity|grav|from|to|region|pp|gpp|sxy|sxx|syy|szz|esxx|esyy|eszz|xvel|yvel|xacc|yacc|xdisp|ydisp|x|y|and|or|shear_mod|bulk_mod|abs|max|min|cos|sin|tan|ssi|vsi|ubi|mohr|hoek|elastic|pm4sand|pm4silt|z_group)\b'
+      scope: parameters.spec.FLACtools
+
+    - match: '\b(sat|density|dens|tension|tens|bulk|shear|fri|c|jcoh|jfri|jang|f|hbs|hba|hbmb|hbsigci|on|off|ex|x|i|ii|y|j|jj|z|k|null|remove|long)\b'
+      scope: properties.spec.FLACtools
+
+  numbers:
+    - match: '\b(-)?[0-9.]+\b'
+      scope: constant.numeric.FLACtools
+
+  operators:
+    - match: '(\+|-|=|/|<|>|<>|#| AND | OR | and | or )'
+      scope: operator.arithmetic.FLACtools
+
+  strings:
+    # Strings begin and end with quotes, and use backslashes as an escape
+    # character.
+    - match: '"([^\\"]|\\")*"'
+      scope: punctuation.definition.string.begin.FLACtools
+
+    - match: "'([^\']|\')*'"
+      scope: punctuation.definition.string.begin.FLACtools
+
+  comments:
+    # Comments begin with a ';' and finish at the end of the line.
+    - match: ';'
+      scope: punctuation.definition.comment.FLACtools
+      push:
+        # This is an anonymous context push for brevity.
+        - meta_scope: comment.line.semi-colon.FLACtools
+        - match: $\n?
+          pop: true

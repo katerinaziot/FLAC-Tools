@@ -1,0 +1,49 @@
+{
+        "scope": "source.FLACtools",
+
+        "completions":
+        [
+        // FLAC Fish Mathematical Built-in Functions 
+                { "trigger": "acos",  "contents":  "Acos(${1:exp})"},
+                { "trigger": "asin",  "contents":  "Asin(${1:exp})"},
+                { "trigger": "atan",  "contents":  "Atan(${1:exp})"},
+                { "trigger": "atan2", "contents":  "Atan2(${1:exp})"},
+                { "trigger": "cos",   "contents":  "Cos(${1:exp})"},
+                { "trigger": "cosh",  "contents":  "Cosh(${1:exp})"},
+                { "trigger": "exp",   "contents":  "Exp(${1:exp})"},
+                { "trigger": "fmod",  "contents":  "fmod(${1:exp})"},
+                { "trigger": "floor", "contents":  "Floor(${1:exp})"},
+                { "trigger": "log",   "contents":  "Log(${1:exp})"},
+                { "trigger": "round", "contents":  "Round(${1:exp})"},
+                { "trigger": "sqrt",  "contents":  "Sqrt(${1:exp})"},
+                { "trigger": "sin",   "contents":  "Sin(${1:exp})"},
+                { "trigger": "sinh",  "contents":  "Sinh(${1:exp})"},
+                { "trigger": "tan",   "contents":  "Tan(${1:exp})"},
+                { "trigger": "tanh",  "contents":  "Tanh(${1:exp})"},
+
+        // Loops, conditionals and macros
+                { "trigger": "define function", "contents":  "def ${1:functionname} \n\t${2:statement}\nend"},
+                { "trigger": "command", "contents":  "command \n\t${2:statement}\nendcommand"},
+                { "trigger": "loop", "contents":  "loop ${1:iterparam} (${1:bounds})\n\t${2:statement}\nendloop"},
+                { "trigger": "IfCondition", "contents":  "if ${1:exp} \n\t${2:statement}\nendif"},
+                { "trigger": "ElseIf", "contents":  "ElseIf (${1:exp})"},
+                { "trigger": "Call", "contents":  "call ${1:otherfile}"},
+                { "trigger": "save", "contents":  "save ${1:otherfile}"},
+                { "trigger": "restore", "contents":  "restore ${1:otherfile}"},
+
+        // FLAC others
+                { "trigger": "set", "contents":  "set (${1:exp})"},
+                { "trigger": "fix", "contents":  "fix (${1:exp})"},
+                { "trigger": "dy_damp", "contents":  "dy_damp (${1:exp})"},
+                { "trigger": "history", "contents":  "history (${1:exp})"},
+                { "trigger": "apply", "contents":  "apply (${1:exp})"},
+                { "trigger": "model", "contents":  "model (${1:choice})"},
+                { "trigger": "water", "contents":  "water (${1:waterProps})"},
+                { "trigger": "config", "contents":  "config (${1:options})"},
+                { "trigger": "grid", "contents":  "grid ${1:ij}"},
+
+        // FLAC keywords/ text completions    
+                "gravity", "interface", "while_stepping", "new"
+        ]
+        
+}
