@@ -21,6 +21,7 @@ This is a [Sublime3](http://www.sublimetext.com/) plugin for auto-completion and
 	e) Again, open Preferences/Package Control
 	f) Select Install Package
 	g) Search for FLACTools and install it.
+	h) Syntax should be now found under /View/Syntax.
 
 ---
 
