@@ -3,11 +3,11 @@ FLAC-Tools Plugin version 1.0.0 (2022-02-08)
 
 Thank you for installing the FLAC-Tools plugin!
 
-To learn about the features of this plugin and get updates, go to the Github page:
+To learn about the features of this plugin and get updates, go to the GitHub page:
 
 https://github.com/katerinaziot/FLAC-Tools
 
 
 Katerina Ziotopoulou
-Assistant Professor
-University of California Davis
+University of California, Davis
+katerinaziot at ucdavis.edu
