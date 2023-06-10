@@ -5,7 +5,7 @@
 
 name: FLACtools
 
-file_extensions: [fis, fish, dat]
+file_extensions: [fis, fish, dat, f2fis]
 
 scope: source.FLACtools
 
