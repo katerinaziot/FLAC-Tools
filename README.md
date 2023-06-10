@@ -15,12 +15,23 @@ This is a [Sublime3](http://www.sublimetext.com/) plugin for auto-completion and
 ### Installation 
 
 	a) Open Sublime 
-	b) Go to Preference/Package Control
+	b) Go to Settings/Package Control
 	c) Select Add Repository (field shows up in the bottom field)
 	d) Enter the plugin github repo https://github.com/katerinaziot/FLAC-Tools
-	e) Again, open Preferences/Package Control
+	e) Again, open Settings/Package Control
 	f) Select Install Package
 	g) Search for FLACTools and install it.
+	h) Syntax should be now found under /View/Syntax.
+	
+### Update 
+
+	a) Open Sublime 
+	b) Go to Settings/Package Control
+	c) Select Add Repository (field shows up in the bottom field)
+	d) Enter the plugin github repo https://github.com/katerinaziot/FLAC-Tools
+	e) Again, open Settings/Package Control
+	f) Select Upgrade Package
+	g) Search for FLACTools and update it.
 	h) Syntax should be now found under /View/Syntax.
 
 ---
