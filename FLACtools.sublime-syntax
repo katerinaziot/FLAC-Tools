@@ -30,10 +30,10 @@ contexts:
     # need to be escaped: this is done by using two single quotes next to each
     # other.
 
-    - match: '\b(group|mark|unmark|line|arc|endif|end_if|endcase|caseof|if|then|else|res|rat|print|pl pen|array|while|whilestepping|while_stepping|prop|new|config|grid|model|gen|save|table|ini|initial|call|fix|set|his|history|struc|structure|interface|attach|water|apply|interior|solve|step|plot)\b'
+    - match: '\b(global|cmodel|group|mark|unmark|line|arc|endif|end_if|endcase|caseof|if|then|else|res|rat|print|pl pen|array|while|whilestepping|while_stepping|prop|new|config|grid|model|zone|gen|save|table|ini|initial|call|fix|set|his|history|struc|structure|interface|attach|water|apply|interior|solve|step|plot)\b'
       scope: keyword.control.FLACtools
 
-    - match: '\b(def|define|end|command|end_command|endcommand|loop|endloop|end_loop)\b'
+    - match: '\b(fish|def|define|end|command|end_command|endcommand|loop|endloop|end_loop)\b'
       scope: major.functions.FLACtools
       
     - match: '\b(flow|gwflow|cppudm|dyn|dy_damp|dynamic|read|write|delete|hyst|gravity|grav|from|to|region|pp|gpp|sxy|sxx|syy|szz|esxx|esyy|eszz|xvel|yvel|xacc|yacc|xdisp|ydisp|x|y|and|or|shear_mod|bulk_mod|abs|max|min|cos|sin|tan|ssi|vsi|ubi|mohr|hoek|elastic|pm4sand|pm4silt|z_group)\b'
